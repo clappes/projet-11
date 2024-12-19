@@ -1,0 +1,42 @@
+.bannerHome {
+    height: 111px;
+    background-image: url(../../assets/image_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1440px) {
+        height: 223px;
+    }
+
+    &__container {
+        height: 111px;
+        background-color: rgba($color: #000000, $alpha: 0.6);
+        border-radius: 10px;
+        display: grid;
+        padding: 0 16px;
+        @media screen and (min-width: 1440px) {
+            height: 223px;
+        }
+
+        &__text {
+            text-align: left;
+            align-self: center;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 24px;
+            color: #FFF;
+            @media screen and (min-width: 1440px) {
+                text-align: center;
+                font-size: 48px;
+                line-height: 68px;
+                
+                br {
+                    display: none;
+                }
+            }
+
+        }
+    }
+}

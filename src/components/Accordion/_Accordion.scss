@@ -1,0 +1,82 @@
+.accordion {
+    background-color: #F6F6F673;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+    @media screen and (min-width: 1440px) {
+        margin-bottom: 30px;
+    }
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #FF6060;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        @media screen and (min-width: 1440px) {
+            height: 32px;
+        }
+        & h2 {
+            color: #FFF;
+            font-family: 'Montserrat';
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 18px;
+            text-align: left;
+            @media screen and (min-width: 1440px) {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+        & img {
+            width: 16px;
+            transition: all .2s;
+        }
+    }
+    &__content {
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+        padding: 0 20px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: all .4s ease-in-out;
+        & ul {
+            & li {
+                font-family: 'Montserrat';
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                color: #000;
+            }
+            & p {
+                font-family: "Montserrat";
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 17px;
+                color: #000;
+            }
+        }
+    }
+}
+
+
+.active .accordion__title img {
+	transform: rotate(180deg);
+	transition: 0.4s ease-in-out;
+}
+.active .accordion__content {
+    visibility: visible;
+    height: auto;
+    overflow: visible;
+    padding: 13px 20px;
+    opacity: 1;
+}
+
+.false.accordion {
+    background-color: #FFF;
+}

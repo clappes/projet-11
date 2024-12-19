@@ -1,0 +1,13 @@
+.scoreRate {
+    display: flex;
+    justify-content: space-between;
+    width: 98px;
+    @media screen and (min-width: 1440px) {
+        width: 196px;
+    }
+    & img {
+        @media screen and (min-width: 1440px) {
+            width: 25px;
+        }
+    }
+}

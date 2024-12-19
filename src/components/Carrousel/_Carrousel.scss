@@ -1,0 +1,73 @@
+.carrousel {
+    height: 255px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+    @media screen and (min-width: 1440px) {
+        height: 415px;
+    }
+    &__leftArrow {
+        display: flex;
+        position: absolute;
+        top: 47%;
+        left: 2%;
+        width: 12px;
+        height: 20px;
+        z-index: 10;
+        cursor: pointer;
+        @media screen and (min-width: 1440px) {
+            width: 47px;
+            height: 79px;
+            top: 42%;
+        }
+    }
+    &__rightArrow {
+        display: flex;
+        position: absolute;
+        top: 47%;
+        right: 2%;
+        width: 12px;
+        height: 20px;
+        z-index: 10;
+        cursor: pointer;
+        @media screen and (min-width: 1440px) {
+            width: 47px;
+            height: 79px;
+            top: 42%;
+        }
+    }
+    &__slider {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        border-radius: 10px;
+        transition: opacity ease-in-out 0.6s;
+        & img {
+            width: 335px;
+            height: 255px;
+            border-radius: 10px;
+            @media screen and (min-width: 1440px) {
+                width: 1240px;
+                height: 415px;
+                object-fit: cover;
+                border-radius: 25px;
+            }
+        }
+        &__number {
+            display: none;
+            @media screen and (min-width: 1440px) {
+                display: block;
+                position: absolute;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: #FFF;
+                left: 48%;
+                top: 86%;
+            }
+        }
+    }
+}

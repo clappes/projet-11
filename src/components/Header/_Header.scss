@@ -1,0 +1,15 @@
+.headerWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    @media screen and (min-width: 1440px) {
+        margin: 45px 100px;
+    }
+
+    &__fig {
+        &__logo {
+            width: 145px;
+        }
+    }
+}

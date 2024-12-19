@@ -1,0 +1,32 @@
+.card {
+    height: 255px;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1440px) {
+        margin: 0 auto;
+        height: 340px;
+    }
+
+    & img {
+        object-fit: cover;
+        width: 335px;
+        height: 255px;
+        @media screen and (min-width: 1440px) {
+            width: 340px;
+            height: 340px;
+        }
+    }
+    &__layer {
+        @media screen and (min-width: 1440px) {
+            max-width: 340px;
+        }
+        &__title {
+            margin-top: -66px;
+            padding: 0 16px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 18px;
+            color: #fff;
+            line-height: 25px;
+        }
+    }
+}
